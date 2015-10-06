@@ -1,0 +1,10 @@
+﻿{
+    "editable": [
+        "src/Solver.cs"
+    ],
+    "excludes": [
+        ".gitignore",
+        "challenge.json"
+    ],
+    "test": "nunit-console target/SudokuChallengeEasy.dll"
+}

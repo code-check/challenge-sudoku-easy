@@ -1,0 +1,3 @@
+﻿build:
+  - mcs src/*.cs -reference:nunit.framework.dll -target:library -out:target/SudokuChallengeEasy.dll
+test: nunit-console target/SudokuChallengeEasy.dll
