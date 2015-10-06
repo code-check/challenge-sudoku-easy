@@ -4,7 +4,8 @@
     ],
     "excludes": [
         ".gitignore",
-        "challenge.json"
+        "challenge.json",
+        "src/Tests.cs"
     ],
     "test": "nunit-console target/SudokuChallengeEasy.dll"
 }

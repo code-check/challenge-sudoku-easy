@@ -10,27 +10,6 @@ namespace SudokuChallengeEasy.src
     [TestFixture]
     public class Tests
     {
-        /*
-483921657
-967345821
-251876493
-548132976
-729564138
-136798245
-372689514
-814253769
-695417382
-         * 
-954213687
-617548923
-832796541
-763851294
-128974365
-549362178
-281637459
-475129836
-396485712
-         */
         private string[] Sudokus = { 
                                        "782614359439825176651937428293471864568392715147568293326749581975183662814256937",
                                        "782614359439825176651937428293471864568392715147568293326749581975183642814256937",
@@ -53,10 +32,7 @@ namespace SudokuChallengeEasy.src
         {
             int i = 0;
             foreach (string sudoku in Sudokus)
-            {
-                Console.WriteLine(i);
                 Assert.AreEqual(Results[i++], Solver.IsValidSolution(sudoku));
-            }
         }
     }
 }
