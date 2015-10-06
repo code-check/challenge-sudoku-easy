@@ -1,0 +1,10 @@
+{
+  "editable": [
+    "src/main/scala/*"
+  ],
+  "excludes": [
+    ".gitignore",
+    "challenge.json"
+  ],
+  "test": "sbt test"
+}
