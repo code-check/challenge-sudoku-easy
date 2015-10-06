@@ -5,6 +5,8 @@
     "excludes": [
         ".gitignore",
         "challenge.json",
+        "codecheck.yml",
+        "target/*",
         "src/Tests.cs"
     ],
     "test": "nunit-console target/SudokuChallengeEasy.dll"
