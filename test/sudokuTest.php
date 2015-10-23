@@ -1,0 +1,30 @@
+<?php
+
+require_once 'app/sudoku.php';
+
+class sudokuTest extends PHPUnit_Framework_TestCase
+{
+    function testPuzzle1() {
+        $this->assertEquals(false, isValid("782614359439825176651937428293471864568392715147568293326749581975183662814256937"));
+    }
+
+    function testPuzzle2() {
+        $this->assertEquals(false, isValid("782614359439825176651937428293471864568392715147568293326749581975183642814256937"));
+    }
+
+    function testPuzzle3() {
+        $this->assertEquals(true, isValid("782614359439825176651937428293471865568392714147568293326749581975183642814256937"));
+    }
+
+    function testPuzzle4() {
+        $this->assertEquals(false, isValid("483921654967345821251876493548132976729564138136798245372689514814253769695417382"));
+    }
+
+    function testPuzzle5() {
+        $this->assertEquals(true, isValid("954213687617548923832796541763851294128974365549362178281637459475129836396485712"));
+    }
+
+    function testPuzzle6() {
+        $this->assertEquals(false, isValid("954213687617548923832796541763851294128974365549362178281637549475129836396485712"));
+    }
+}

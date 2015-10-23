@@ -1,0 +1,10 @@
+{
+  "editable": [
+    "app/*"
+  ],
+  "excludes": [
+    ".gitignore",
+    "challenge.json"
+  ],
+  "test": "phpunit test"
+}
