@@ -1,25 +1,22 @@
 <?php
 
-function isValid($sudoku) {
+function isValid($sudoku)
+{
     //BEGIN_CHALLENGE
-    // Check sum
-    $sum = 0;
-    for ($i = 0; $i < strlen($sudoku); $i++) {
-        $sum += intval($sudoku[$i]);
-    }
-    if ($sum != 405)
-        return false;
 
     // Create data array
+    $sum = 0;
     $data = array();
-    for ($i = 0; $i < 9; $i++)
-    {
+    for ($i = 0; $i < 9; $i++) {
         $data[] = array();
-        for ($j = 0; $j < 9; $j++)
-        {
+        for ($j = 0; $j < 9; $j++) {
             $data[$i][] = intval($sudoku[$i * 9 + $j]);
+            $sum += $data[$i][$j];
         }
     }
+    // Check sum
+    if ($sum != 405)
+        return false;
 
     // Check cells
     for ($val = 1; $val <= 9; $val++) {
@@ -40,13 +37,10 @@ function isValid($sudoku) {
     }
 
     // Check rows
-    for ($val = 1; $val <= 9; $val++)
-    {
-        for ($y = 0; $y < 9; $y++)
-        {
+    for ($val = 1; $val <= 9; $val++) {
+        for ($y = 0; $y < 9; $y++) {
             $count = 0;
-            for ($x = 0; $x < 9; $x++)
-            {
+            for ($x = 0; $x < 9; $x++) {
                 if ($data[$x][$y] == $val)
                     if ($count++ > 0) return false;
             }
@@ -54,13 +48,10 @@ function isValid($sudoku) {
     }
 
     // Check columns
-    for ($val = 1; $val <= 9; $val++)
-    {
-        for ($x = 0; $x < 9; $x++)
-        {
+    for ($val = 1; $val <= 9; $val++) {
+        for ($x = 0; $x < 9; $x++) {
             $count = 0;
-            for ($y = 0; $y < 9; $y++)
-            {
+            for ($y = 0; $y < 9; $y++) {
                 if ($data[$x][$y] == $val)
                     if ($count++ > 0) return false;
             }
