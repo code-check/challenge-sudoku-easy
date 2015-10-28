@@ -3,7 +3,8 @@
         "sudoku.go"
     ],
     "excludes": [
-        "challenge.json"
+        "challenge.json",
+        ".gitignore"
     ],
     "test": "go test"
 }
