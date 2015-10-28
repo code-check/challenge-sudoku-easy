@@ -1,0 +1,9 @@
+﻿{
+    "editable": [
+        "sudoku.go"
+    ],
+    "excludes": [
+        "challenge.json"
+    ],
+    "test": "go test"
+}
