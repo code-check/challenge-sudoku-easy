@@ -1,0 +1,10 @@
+{
+  "editable": [
+    "sudoku.py"
+  ],
+  "excludes": [
+    "challenge.json",
+    ".gitignore"
+  ],
+  "test": "nosetests *.py"
+}
