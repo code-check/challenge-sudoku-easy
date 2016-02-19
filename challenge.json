@@ -1,4 +1,9 @@
 ﻿{
+    "tags": [
+        "GoLang",
+        "Sudoku",
+        "Algorithm"
+    ],
     "editable": [
         "sudoku.go"
     ],
