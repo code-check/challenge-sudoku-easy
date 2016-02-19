@@ -1,4 +1,9 @@
 {
+  "tags": [
+    "Scala",
+    "Sudoku",
+    "Algorithm"
+  ],
   "editable": [
     "src/main/scala/*"
   ],
