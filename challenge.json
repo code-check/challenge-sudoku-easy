@@ -1,4 +1,9 @@
 {
+  "tags": [
+    "Python",
+    "Sudoku",
+    "Algorithm"
+  ],
   "editable": [
     "sudoku.py"
   ],
